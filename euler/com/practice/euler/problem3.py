@@ -25,10 +25,8 @@ def primeFactor(num, largestFactor=1):
                 return primeFactor(num,largestFactor)
             else:
                 return primeFactor(num,i)
-    if largestFactor == 1:
-        return 1
-    else:
-        return num
+    return num
 
 if __name__ == '__main__':
-    print(primeFactor(600851475143))
+    print(primeFactor(11))
+    
